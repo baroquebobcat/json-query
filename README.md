@@ -1,6 +1,8 @@
 # Json::Query
 
-TODO: Write a gem description
+A simple query language for plucking values out of json objects.
+
+* more light weight than json-path
 
 ## Installation
 
@@ -18,7 +20,12 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'json/query'
+
+Json::Query.query "foo", {"foo" => 1}
+# => 1
+```
 
 ## Contributing
 
